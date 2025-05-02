@@ -77,7 +77,7 @@
                             </g>
                             <path style="fill:none" d="M0 0h6.827v6.827H0z" />
                         </svg>
-                        My Travel Agency
+                        <span class="d-none d-md-block">My Travel Agency</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,13 +99,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="btn-group">
+                    <div class="btn-group d-none d-md-flex" role="group" aria-label="Basic mixed styles example">
                         <button class="btn primary-btn rounded-pill text-white dropdown-toggle d-flex align-items-center gap-1" type="button" id="triggerId"
                                 data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
                             <img src="images/icons8-usa-96.png" alt="usa flag" class="img-fluid" width="30px"> EN
                         </button>
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="triggerId">
+                        <div class="dropdown-menu dropdown-menu-end z-1" aria-labelledby="triggerId">
                             <a class="dropdown-item" href="#">
                                 <img src="images/spain.png " alt="usa flag" class="img-fluid" width="30px"> ES
                             </a>
@@ -127,16 +127,14 @@
                             itaque nisi
                             ab beatae cumque natus molestiae quod corrupti impedit consequuntur! Eius et perferendis ab
                             quas laborum aperiam, adipisci reiciendis.</p>
-                        <form action="" class="rounded-pill px-2 px-md-5 py-1 py-md-3 bg-white mt-3 shadow-sm position-relative">
+                        <form action="" class="rounded-pill px-3 px-md-5 py-1 py-md-3 bg-white mt-3 shadow-sm position-relative">
                             <div class="input-group gap-2 bg-white">
-                                <span class="fs-4 text-danger"><i class="bi bi-geo-alt"></i></span>
-                                <input type="text" class="form-control border-0" placeholder="Search for destinations" aria-label="Search for destinations">
-                                <input type="date" class="form-control border-0" name="date" id="date" placeholder="Date">
-                                <input type="number" min="1" max="10" class="form-control border-0" name="guests" id="days" placeholder="Number of Days">
-                                <input type="number" min="1" max="10" class="form-control border-0" name="guests" id="guests" placeholder="Guests">
-                                <button type="submit" class="btn primary-bg rounded-pill" id="search">
-                                    <i class="bi bi-search text-white"></i>
-                                </button>
+                                <p class="p-0 m-0"><span class="fs-4 text-danger"><i class="bi bi-geo-alt"></i></span></p>
+                                <input type="text" class="form-control bg-light border-0" placeholder="Search for destinations" aria-label="Search for destinations">
+                                <input type="date" class="form-control bg-light border-0" name="date" id="date" placeholder="Date">
+                                <input type="number" min="1" max="10" class="form-control bg-light border-0" name="guests" id="days" placeholder="Number of Days">
+                                <input type="number" min="1" max="10" class="form-control bg-light border-0" name="guests" id="guests" placeholder="Guests">
+                                <button type="submit" class="btn primary-bg rounded-pill px-3" id="search"><i class="bi bi-search text-white"></i></button>
                             </div>
                         </form>
                     </div>
@@ -151,7 +149,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
             </header>
             <div class="p-3 container">
-                <ul class="nav justify-content-between my-4 flex-wrap">
+                <ul class="nav justify-content-start justify-content-md-center gap-2 gap-md-5 my-4 flex-wrap">
                     <li class="nav-item rounded-circle rounded-pill primary-bg">
                         <a class="nav-link active text-white" aria-current="page" href="#">All</a>
                     </li>
@@ -242,7 +240,7 @@
                     </div>
                     <div class="col-12 col-md-4 mb-5">
                         <div class="card border-0 shadow-sm">
-                            <img src="./images/travel-07.jpg" class="card-img-top rounded-4" alt="...">
+                            <img src="./images/travel-10.jpg" class="card-img-top rounded-4" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fs-4 d-flex justify-content-between mb-3">Algiers, Algeria <span class="fw-light">$3100</span></h5>
                                 <p class="card-text text-black-50">
@@ -278,7 +276,7 @@
                     <a href="" class="rounded-pill nav-link text-dark px-4 py-2 border">
                         <span class="page-link primary-text">Previous</span>
                     </a>
-                    <ul class="d-flex justify-content-center gap-3 nav">
+                    <ul class="d-flex justify-content-center gap-4 nav d-none d-sm-flex">
                         <li class="page-item rounded-circle px-3 py-2 border primary-text">
                             <a class="page-link" href="#">1</a>
                         </li>
@@ -301,10 +299,12 @@
                 </nav>
             </div>
         </section>
-        <section class="container mt-5 d-flex flex-column gap-3">
+        <section class="container mt-5 d-flex flex-column gap-3 bg-light p-3 p-md-5 rounded-4">
             <div class="col-10 offset-1 text-center">
                 <h2 class="mb-5">Why Choose Us</h2>
-                <p class="text-black -50 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                <p class="text-black-50 mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a turpis ac urna convallis euismod. Mauris ut fermentum diam, at ullamcorper risus. Nunc id nisi mi. Nulla ultricies faucibus ex, ut tempus tortor gravida quis. Proin tincidunt semper dolor, ac sodales quam sollicitudin id. Nam eget ultrices dolor, vel laoreet lacus. Nunc ut porta nibh, at semper nunc.
+                </p>
             </div>
 
 <!--         <h2>Features</h2>-->
@@ -314,7 +314,9 @@
                 </div>
                 <div class="col-12 col-md-6 p-3 p-md-5 align-self-center">
                     <h2 class="mb-3">Safely saved list</h2>
-                    <p class="text-black-50 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                    <p class="text-black-50 mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a turpis ac urna convallis euismod. Mauris ut fermentum diam, at ullamcorper risus. Nunc id nisi mi. Nulla ultricies faucibus ex, ut tempus tortor gravida quis. Proin tincidunt semper dolor, ac sodales quam sollicitudin id. Nam eget ultrices dolor, vel laoreet lacus. Nunc ut porta nibh, at semper nunc.
+                    </p>
                     <a href="#" class="primary-bg rounded-pill px-5 py-3 text-white text-decoration-none">Read More</a>
                 </div>
             </div>
@@ -324,7 +326,9 @@
                 </div>
                 <div class="col-12 col-md-6 align-self-center">
                     <h2 class="mb-3">Flight Price Alert</h2>
-                    <p class="mb-5 text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                    <p class="mb-5 text-black-50">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a turpis ac urna convallis euismod. Mauris ut fermentum diam, at ullamcorper risus. Nunc id nisi mi. Nulla ultricies faucibus ex, ut tempus tortor gravida quis. Proin tincidunt semper dolor, ac sodales quam sollicitudin id. Nam eget ultrices dolor, vel laoreet lacus. Nunc ut porta nibh, at semper nunc.
+                    </p>
                     <a href="#" class="primary-bg rounded-pill px-5 py-3 text-white text-decoration-none">Find It Here</a>
                 </div>
             </div>
@@ -334,7 +338,9 @@
                 </div>
                 <div class="col-12 col-md-6 align-self-center">
                     <h2 class="mb-3">Passanger Quick Pick</h2>
-                    <p class="mb-5 text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                    <p class="text-black-50 mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a turpis ac urna convallis euismod. Mauris ut fermentum diam, at ullamcorper risus. Nunc id nisi mi. Nulla ultricies faucibus ex, ut tempus tortor gravida quis. Proin tincidunt semper dolor, ac sodales quam sollicitudin id. Nam eget ultrices dolor, vel laoreet lacus. Nunc ut porta nibh, at semper nunc.
+                    </p>
                     <a href="#" class="primary-bg rounded-pill px-5 py-3 text-white text-decoration-none">Check it out!</a>
                 </div>
             </div>
@@ -344,7 +350,9 @@
                 </div>
                 <div class="col-12 col-md-6 align-self-center">
                     <h2 class="mb-3">Easy Reschedule</h2>
-                    <p class="mb-5 text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                    <p class="text-black-50 mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a turpis ac urna convallis euismod. Mauris ut fermentum diam, at ullamcorper risus. Nunc id nisi mi. Nulla ultricies faucibus ex, ut tempus tortor gravida quis. Proin tincidunt semper dolor, ac sodales quam sollicitudin id. Nam eget ultrices dolor, vel laoreet lacus. Nunc ut porta nibh, at semper nunc.
+                    </p>
                     <a href="#" class="primary-bg rounded-pill px-5 py-3 text-white text-decoration-none">Read More</a>
                 </div>
             </div>
